@@ -6,7 +6,7 @@ var tsify = require('tsify');
 
 gulp.task('build', function(){
 	return browserify({ entries: './app.ts', extensions: [ '.ts' ], debug: true, transform: [reactify] })
-		.plugin(tsify)
+		.plugin(tsify, {target: 'es6'})
 		.bundle()
 		.pipe(source('bundles.js'))
 		.pipe(gulp.dest('dist'));
