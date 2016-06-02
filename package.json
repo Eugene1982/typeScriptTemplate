@@ -1,26 +1,19 @@
 {
   "name": "typescripttemplate",
   "version": "1.0.0",
-  "description": "Typescript starter template\r ========",
-  "main": "app.ts",
+  "description": "",
+  "main": "./dist/bundle.js",
   "scripts": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iarovyi/typeScriptTemplate.git"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/iarovyi/typeScriptTemplate/issues"
-  },
-  "homepage": "https://github.com/iarovyi/typeScriptTemplate#readme",
   "dependencies": {
-    "browserify": "^13.0.0",
-    "gulp": "^3.9.1",
-    "reactify": "^1.1.1",
-    "tsify": "^0.15.2",
-    "vinyl-source-stream": "^1.1.0"
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  },
+  "devDependencies": {
+    "source-map-loader": "^0.1.5",
+    "ts-loader": "^0.8.2"
   }
 }
